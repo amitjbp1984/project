@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>The jQuery Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function() 
+	{
+      $("button").click(function()
+	{
+         $("div").toggle(1000);
+      });
+   });
+</script>
+<style>
+   button{margin:3px;width:125px;}
+   div{margin:3px;padding:12px; height:100px; width:100px;background-color:#9c9cff;}
+</style>
+</head>
+<body>
+   <div>This is Box</div>
+   <button>Toggle Box</button>
+</body>
+</html>

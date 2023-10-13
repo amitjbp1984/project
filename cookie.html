@@ -1,0 +1,19 @@
+<html>
+	<body>
+		Enter Name<input type="text" name="t1"><br>
+		Enter Address<input type="text" name="t2"><br>
+		<input type="submit" name="b1" value="save">
+	</body>
+	<?php
+		if(isset($_POST['b1']))
+		{
+		$cookie_name = "c1";
+		$cookie_value = $_POST['t1'];
+		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+		$cookie_name="c2";
+		$cookie_value=$_POST['t2'];
+		setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+		}
+	?>
+	</body>
+</html>
